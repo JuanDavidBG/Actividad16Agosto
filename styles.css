@@ -47,8 +47,7 @@ img{
   height: 20px;
   font-weight: bold;
   display: flex;
-  justify-content: space-between;
-  
+  flex-direction: row-reverse;
 }
 
 .whatsapp__chats {
@@ -105,7 +104,8 @@ img{
 }
 
 .whatsapp__nav-link:hover{
-  
+background-color: var(--Verdewsp);
+cursor: pointer;
 }
 
 .whatsapp__nav-link--active {

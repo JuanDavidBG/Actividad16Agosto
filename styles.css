@@ -56,6 +56,11 @@ img{
   border-bottom: 2px solid var(--Gris);
 }
 
+.whatsapp__chats:hover {
+background-color: var(--Menta);
+cursor: pointer;
+}
+
 .chat {
   display: flex;
   align-items: center;
@@ -78,7 +83,7 @@ img{
   font-weight: bold;
 }
 
-.chat__Ultimo-Mensaje {
+.chat__Ultimo--Mensaje {
   font-size: 0.9em;
   color: var(--Gris);
 }
@@ -97,18 +102,18 @@ img{
  
 }
 
-.whatsapp__nav-link {
+.whatsapp__nav--link {
   color: var(--Blanco);
   text-decoration: none;
   font-size: 1em;
 }
 
-.whatsapp__nav-link:hover{
+.whatsapp__nav--link:hover{
 background-color: var(--Verdewsp);
 cursor: pointer;
 }
 
-.whatsapp__nav-link--active {
+.whatsapp__nav--link--active {
   font-weight: bold;
   border-bottom: 2px solid var(--Blanco);
 }

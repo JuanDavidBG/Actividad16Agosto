@@ -45,20 +45,23 @@ img{
 .whatsapp__titulo {
   font-size: 18px;
   height: 20px;
-  font-weight: bold;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
 }
 
 .whatsapp__chats {
   background-color: var(--Negro);
   color: var(--Blanco);
   border-bottom: 2px solid var(--Gris);
+  transition: 0.3s ease, 0.3s ease;
+  scroll-behavior: smooth;
 }
 
 .whatsapp__chats:hover {
 background-color: var(--Menta);
-cursor: pointer;
+cursor: pointer
 }
 
 .chat {
@@ -95,11 +98,10 @@ cursor: pointer;
 
 .whatsapp__nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--chat);
-  padding: 10px 0;
-  position: relative;
- 
+  padding-bottom: 5px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .whatsapp__nav--link {

@@ -13,9 +13,11 @@
     --Blanco: #fff;
     --Gris: #5c5c5c;
     --Menta: #aefff4;
+    --Verde: #5cca1d;
 }
   
 body {
+  display: block;
   font-family: Arial, sans-serif;
   background-color: var(--Negro);
   color: var(--Blanco);
@@ -40,6 +42,7 @@ body {
 img{
   width: 20px;
   height: 20px;
+
 }
 
 .whatsapp__titulo {
@@ -49,14 +52,14 @@ img{
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  text-decoration: none;
+  list-style: none;
 }
 
 .whatsapp__chats {
   background-color: var(--Negro);
   color: var(--Blanco);
   border-bottom: 2px solid var(--Gris);
-  transition: 0.3s ease, 0.3s ease;
-  scroll-behavior: smooth;
 }
 
 .whatsapp__chats:hover {
@@ -91,6 +94,11 @@ cursor: pointer
   color: var(--Gris);
 }
 
+.chat__Ultimo--Mensaje-Verde{
+  font-size: 0.9em;
+  color: var(--Verde);
+}
+
 .chat__tiempo {
   font-size: 0.8em;
   color: var(--Gris);
@@ -118,4 +126,54 @@ cursor: pointer;
 .whatsapp__nav--link--active {
   font-weight: bold;
   border-bottom: 2px solid var(--Blanco);
+}
+
+
+.Estados{
+  background-color: var(--Negro);
+  padding: 10px;
+  display: nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Estados:hover{
+background-color: var(--Menta);
+cursor: pointer
+}
+
+.Estados-Tab:target{
+display: block;
+}
+
+
+.Estados-Lista{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Estados-Item{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.foto {
+  width: 50px;
+  height: 60PX;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.Estados-Informa{
+  display: flex;
+  flex-direction: column;
+}
+
+.Estados-Nombre{
+  font-weight: bold;
+
 }

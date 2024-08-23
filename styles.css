@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
 :root{
@@ -19,8 +20,31 @@
 body {
   display: block;
   font-family: Arial, sans-serif;
-  background-color: var(--Blanco);
+  background-color: var(--Negro);
   color: var(--Blanco);
+}
+
+.chats{
+  overflow-y: auto;
+  height: 570px;
+}
+
+.WhatsApp__boton {
+  position: absolute;
+  background-color: var(--Verde);
+  border-radius: 50%;
+  padding: 10px;
+  color: var(--Blanco);
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 320px;
+  margin-top: 80px;
+  bottom: 20px;
 }
 
 .whatsapp {
@@ -30,7 +54,10 @@ body {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
-  border-color: var(--Negro);
+  border-color: var(--Negro); 
+  position: relative; 
+  text-decoration: none;
+  list-style: none;
 }
 
 .whatsapp__inicio {
@@ -42,7 +69,6 @@ body {
 img{
   width: 20px;
   height: 20px;
-
 }
 
 .whatsapp__titulo {
@@ -59,7 +85,12 @@ img{
 .whatsapp__chats {
   background-color: var(--Negro);
   color: var(--Blanco);
-  border-bottom: 2px solid var(--Gris);
+  border-bottom: 2px solid var(--Gris); 
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  overflow-y: auto;
+
 }
 
 .whatsapp__chats:hover {
@@ -71,7 +102,24 @@ cursor: pointer
   display: flex;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid var(--Gris);
+  border-bottom: 1px solid var(--Gris); 
+  padding: 10px;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.notificacion{
+  display: flex;
+  background-color: var(--Verde);
+  border-radius: 100%;
+  color: var(--Blanco);
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .chat__avatar {
@@ -104,6 +152,11 @@ cursor: pointer
   color: var(--Gris);
 }
 
+.chat__tiempo-verde {
+  font-size: 0.8em;
+  color: var(--Verde);
+}
+
 .whatsapp__nav {
   display: flex;
   justify-content: space-around;
@@ -128,52 +181,106 @@ cursor: pointer;
   border-bottom: 2px solid var(--Blanco);
 }
 
-
-.Estados{
-  background-color: var(--Negro);
+.estados{
+  background-color: var(--Blanco);
   padding: 10px;
-  display: nowrap;
+  display: flex;
   align-items: center;
   cursor: pointer;
+
 }
 
-.Estados:hover{
-background-color: var(--Menta);
-cursor: pointer
+.estado-tiempo{
+  color: var(--Gris);
 }
 
-.Estados-Tab:target{
-display: block;
-}
-
-
-.Estados-Lista{
+.estados__tab{
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--Negro);
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.Estados-Item{
+.tab {
+  padding: 20px;
+  border: 1px solid var(--Blanco);
+  border-radius: 10px;
+  margin: 20px;
+  transition: opacity 0.5s; 
+  opacity: 0; 
+}
+
+.estados-lista, .llamadas-lista {
+  display: flex;
+  background-color: var(--Negro);
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.estados-item, .llamadas-item {
   margin: 10px;
   display: flex;
   align-items: center;
-  width: 50px;
-  height: 50px;
 }
 
-.foto {
-  width: 50px;
-  height: 60PX;
-  border-radius: 50%;
-  margin-right: 10px;
-  object-fit: cover;
-}
-
-.Estados-Informa{
+.estados-informa, .llamadas-informa {
   display: flex;
   flex-direction: column;
 }
 
-.Estados-Nombre{
+.estados-nombre, .llamadas-nombre {
   font-weight: bold;
+}
 
+.estados-text, .llamadas-tiempo {
+  color: var(--Gris);
+}
+
+.estados-tab {
+  display: none;
+}
+
+.llamadas-tab {
+  display: none;
+}
+
+.estados-tab:target {
+  display: block;
+}
+
+.llamadas-tab:target {
+  display: block;
+}
+
+.chats {
+  display: none;
+}
+
+.chats:target {
+  display: block;
+}
+
+.estados-tab, .llamadas-tab {
+  display: none;
+}
+
+:target {
+  display: block;
+}
+
+.estados-lista:hover{
+  background-color: var(--Menta);
+}
+
+.llamadas-lista{
+  margin-bottom: 500px;
+}
+
+.estados-item--margin{
+  margin-bottom: 200px;
+}
+
+.llamadas-tab:hover{
+  background-color: var(--Menta);
 }

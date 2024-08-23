@@ -23,13 +23,17 @@
             <a href="">
                 <img src="Iconos/camera-outline.svg" alt="Camara">
             </a>
-            <a href="#" class="whatsapp__nav--link whatsapp__nav--link--active">CHATS</a>
-            <a href="#" class="whatsapp__nav--link">ESTADOS</a>
-            <a href="#" class="whatsapp__nav--link">LLAMADAS</a>
+            <a href="#chats-Tab" class="items2">Chats</a>
+            <a href="#estados-Tab" class="items2">Estados</a>
+            <a href="#llamadas-Tab" class="items2">Llamadas</a>
         </nav>
         <main>
 
-            
+            <div class="WhatsApp__boton">
+                <img src='Iconos/logo-whatsapp.svg'>
+            </div>
+
+        <div class="chats" id="chats-Tab">
         <div class="whatsapp__chats">
             <div class="chat">
                 <img src="Iconos/cris.jpeg" alt="Familia" class="chat__avatar">
@@ -37,7 +41,10 @@
                     <div class="chat__nombre">FamiliaGm</div>
                     <div class="chat__Ultimo--Mensaje">Oliver: Mañana a las 10</div>
                 </div>
-                <div class="chat__tiempo">6:44 p.m.</div>
+                <div>
+                    <div class="chat__tiempo-verde">6:44 p.m.</div>
+                    <div class="notificacion">1</div>
+                </div>
             </div>
         </div>
         <div class="whatsapp__chats">
@@ -179,34 +186,40 @@
                 <div class="chat__tiempo">1:28 a.m.</div>
             </div>
         </div>
-
-       <li class="Estados">
-            <div class="Estados-Tab" id="Estados-Tab">
-                <h2>Estados</h2>
-                <div class="Estados-Lista">
-                    <div class="Estados-Item">
-                        <img src="Iconos/Majo.jpg" alt="Majo" class="foto">
-                        <div class="Estados-Informa">
-                            <p class="Estados-Nombre">Majo</p>
+    </div>
+    <div class="estados-tab estados__tab" id="estados-Tab">
+                <div class="estados-lista">
+                    <div class="estados-item">
+                        <img src="Iconos/definitiva.jpeg" alt="" class="foto foto__estados">
+                        <div class="estados-informa">
+                            <p class="estados-nombre">Mis Actualizaciones</p>
+                            <p class="estado-tiempo">Presiona Para Agregar Actualizaciones</p>
                         </div>
                     </div>
-                <div>
+                </div>   
+                <p>Actualizaciones Recientes</p>   
+                <div class="estados-lista">
+                    <div class="estados-item">
+                        <img src="Iconos/Jackeline.jpg" alt="" class="foto">
+                        <div class="estados-informa">
+                            <p class="estados-nombre">Jackeline</p>
+                            <p class="estado-tiempo">Hace unos segundos</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="llamadas-tab" id="llamadas-Tab">
+                <div class="llamadas-lista">
+                    <div class="llamadas-item">
+                        <img src="Iconos/Majo.jpg" alt="" class="foto">
+                        <div class="llamadas-informa">
+                            <p class="llamadas-nombre">Majo</p>
+                            <p class="llamadas-tiempo">Hace 6 horas</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="Estados-Lista">
-            <div class="Estados-Item">
-                <img src="Iconos/Juan.jpg" alt="" class="foto">
-                <div class="Estados-Informa">
-                    <p class="Estados-Nombre">Juan.</p>
-                </div>
-            </div>
-        </div>
-    </li>
-
-    </main>
     </div>
-    
 </body>
 </html>
 

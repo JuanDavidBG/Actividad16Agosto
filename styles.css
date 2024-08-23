@@ -19,14 +19,14 @@
 body {
   display: block;
   font-family: Arial, sans-serif;
-  background-color: var(--Negro);
+  background-color: var(--Blanco);
   color: var(--Blanco);
 }
 
 .whatsapp {
   max-width: 400px;
   margin: 0 auto;
-  background-color: var(--Blanco);
+  background-color: var(--Negro);
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;

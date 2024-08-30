@@ -9,14 +9,14 @@
     --Azul: #0b0894;
     --Negro: #000000;
     --Verdewsp: #075E54;
-    --chat: #128C7E;
     --Rojo: #7f0505;
     --Blanco: #fff;
     --Gris: #5c5c5c;
     --Menta: #aefff4;
     --Verde: #5cca1d;
 }
-  
+
+
 body {
   display: block;
   font-family: Arial, sans-serif;
@@ -35,7 +35,6 @@ body {
   border-radius: 50%;
   padding: 10px;
   color: var(--Blanco);
-  text-decoration: none;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -45,6 +44,11 @@ body {
   margin-left: 320px;
   margin-top: 80px;
   bottom: 20px;
+}
+
+.WhatsApp__boton:hover {
+  background-color: var(--Blanco);
+  cursor: pointer
 }
 
 .whatsapp {
@@ -60,10 +64,18 @@ body {
   list-style: none;
 }
 
+.itemss{
+  text-decoration: none;
+  color: var(--Blanco);
+  font-size: 18px;
+  margin-left: 10px;
+}
+
 .whatsapp__inicio {
-  background-color: var(--Verdewsp);
+  background-color: var(--Negro);
   padding: 10px;
-  
+  text-decoration: none;
+  list-style: none;
 }
 
 img{
@@ -80,6 +92,7 @@ img{
   font-weight: bold;
   text-decoration: none;
   list-style: none;
+  color: var(--Blanco);
 }
 
 .whatsapp__chats {
@@ -110,6 +123,14 @@ cursor: pointer
   overflow-y: auto;
 }
 
+.chats {
+  display: none;
+}
+
+.chats:target {
+  display: block;
+}
+
 .notificacion{
   display: flex;
   background-color: var(--Verde);
@@ -122,7 +143,7 @@ cursor: pointer
   align-items: center;
 }
 
-.chat__avatar {
+.avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -160,7 +181,7 @@ cursor: pointer
 .whatsapp__nav {
   display: flex;
   justify-content: space-around;
-  background-color: var(--chat);
+  background-color: var(--Negro);
   padding-bottom: 5px;
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
@@ -187,7 +208,14 @@ cursor: pointer;
   display: flex;
   align-items: center;
   cursor: pointer;
+}
 
+.estados-lista{
+  background-color: var(--Blanco);
+}
+
+.estados-lista:hover{
+  background-color: var(--Menta);
 }
 
 .estado-tiempo{
@@ -216,6 +244,7 @@ cursor: pointer;
   background-color: var(--Negro);
   flex-wrap: wrap;
   align-content: stretch;
+  margin-bottom: 10px;
 }
 
 .estados-item, .llamadas-item {
@@ -241,46 +270,26 @@ cursor: pointer;
   display: none;
 }
 
-.llamadas-tab {
-  display: none;
-}
-
 .estados-tab:target {
   display: block;
-}
-
-.llamadas-tab:target {
-  display: block;
-}
-
-.chats {
-  display: none;
-}
-
-.chats:target {
-  display: block;
-}
-
-.estados-tab, .llamadas-tab {
-  display: none;
 }
 
 :target {
   display: block;
 }
 
-.estados-lista:hover{
-  background-color: var(--Menta);
+.llamadas-tab {
+  display: none;
+}
+
+.llamadas-tab:target {
+  display: block;
 }
 
 .llamadas-lista{
   margin-bottom: 500px;
 }
 
-.estados-item--margin{
-  margin-bottom: 200px;
-}
-
-.llamadas-tab:hover{
+.llamadas-lista:hover{
   background-color: var(--Menta);
 }
